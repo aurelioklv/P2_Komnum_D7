@@ -97,7 +97,7 @@ lower_limit = int(input("Lower limit: "))
 upper_limit = int(input("Upper limit: "))
 iteration = int(input("Iteration: "))
 
-result_trapezoid = trapezoidal(lower_limit, upper_limit, iteration)
+result_trapezoid = trapezoidal(lower_limit, upper_limit, 2**(iteration)-1)
 result_romberg = romberg(lower_limit, upper_limit, iteration)
 
 error_trapezoid = (WOLFANS - (float)(result_trapezoid)) / 100
